@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="font-size: 29.63px;"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>待收货</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script src="js/rem.js"></script> 
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/common/base.css">
+    <link rel="stylesheet" type="text/css" href="css/page.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/loaders.min.css">
+    <link rel="stylesheet" type="text/css" href="css/loading.css">
+<script type="text/javascript">
+	$(window).load(function(){
+		$(".loading").addClass("loader-chanage")
+		$(".loading").fadeOut(300)
+	})
+</script>
+</head>
+<!--loading页开始-->
+<body class="mui-ios mui-ios-10 mui-ios-10-3 mui-ios-10-3-1"><div class="loading loader-chanage" style="display: none;">
+	<div class="loader">
+        <div class="loader-inner pacman">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+	</div>
+</div>
+<!--loading页结束-->
+	
+		<header class="mui-bar mui-bar-nav report-header box-s" id="header">
+			<a href="javascript:history.go(-1)"><i class="iconfont icon-fanhui fl"></i></a>
+			<p>待收货</p>
+	    </header>
+	    <div id="main" class="mui-clearfix" style="padding-top: 44px;">
+	    	<div class="order-top clearfloat">
+	    		<ul>
+	    			<li class="clearfloat"><a href="order.html">全部</a></li>
+	    			<li class="clearfloat"><a href="pay-order.html">待付款</a></li>
+	    			<li class="clearfloat"><a href="send-order.html">待发货</a></li>
+	    			<li class="clearfloat cur"><a href="re-order.html">待收货</a></li>
+	    			<!-- <li class="clearfloat"><a href="#">待评价</a></li> -->
+	    		</ul>
+	    	</div>
+	    	<div class="order-list clearfloat">
+	    		<p class="ordernum box-s">
+	    			订单  123456789000
+	    			<span>待收货</span>
+	    		</p>
+	    		<div class="list clearfloat fl box-s">
+	    			<a href="detail.html">
+		    			<div class="tu fl clearfloat">
+		    				<img src="upload/21.jpg">
+		    			</div>
+		    			<div class="middle clearfloat fl">
+		    				<p class="tit">野山茶油5L 纯野山茶籽油</p>
+		    				<p class="fu-tit">月销2000 领券减10元 店长推荐 3月压榨</p>
+		    				<p class="price clearfloat">
+		    					<span class="xprice fl">¥299.00</span>
+		    					<span class="yprice fl">¥308</span>
+		    					<span class="shu">×1</span>
+		    				</p>
+		    			</div>
+	    			</a>
+	    		</div>
+	    		<div class="list clearfloat fl box-s">
+	    			<a href="detail.html">
+		    			<div class="tu fl clearfloat">
+		    				<img src="upload/21.jpg">
+		    			</div>
+		    			<div class="middle clearfloat fl">
+		    				<p class="tit">野山茶油5L 纯野山茶籽油</p>
+		    				<p class="fu-tit">月销2000 领券减10元 店长推荐 3月压榨</p>
+		    				<p class="price clearfloat">
+		    					<span class="xprice fl">¥299.00</span>
+		    					<span class="yprice fl">¥308</span>
+		    					<span class="shu">×1</span>
+		    				</p>
+		    			</div>
+	    			</a>
+	    		</div>
+	    		<a href="javascript:void(0);" class="gopay-btn fr">
+	    			确认收货
+	    		</a>	    		
+	    	</div>
+	    </div>
+	
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/mui.min.js"></script>
+	<script type="text/javascript" src="js/hmt.js"></script>
+
+</body></html>

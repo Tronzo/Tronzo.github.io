@@ -1,0 +1,30 @@
+.banner img{ max-width: 100%; }
+.productList ul{ padding: 0; }
+.productList li{ height: 120px; margin-bottom: 10px; padding: 10px; background: #fff; }
+.productList li span.pic{ position: absolute; display: block; width: 100px; height: 100px; }
+.productList li span.pic img{ width: 100%; height: 100%; }
+.prosite{ padding-left: 105px; }
+.prosite span.title{ display: block; }
+.prosite span.title h1{ font-size: 14px; color: #000; }
+.prosite .buynow{ float: right; display: block; width: 100px; height: 46px; margin-right: 20px; padding: 5px 0; background: #FA478F; color: #fff; }
+.prosite .buynow em,.prosite .buynow i{ display: block; line-height: 18px; text-align: center; } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

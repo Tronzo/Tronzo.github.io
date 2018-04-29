@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>详情页</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script src="js/rem.js" ></script> 
+    <script src="js/jquery.min.js"  type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/common/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/page.css" />
+    <link rel="stylesheet" type="text/css" href="css/all.css" />
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/loaders.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/loading.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+<script type="text/javascript">
+	$(window).load(function(){
+		$(".loading").addClass("loader-chanage")
+		$(".loading").fadeOut(300)
+	})
+</script>
+<style type="text/css">
+	.detailInfo{background: #fff;}
+	.detailInfo img{max-width: 100%;}
+	.sdetail .middle{ padding: 10px 0; }
+	.pgMiddle{ margin-top: 5px; border-top: 1px solid #e7e7e7; }
+</style>
+</head>
+<!--loading页开始-->
+<div class="loading">
+	<div class="loader">
+        <div class="loader-inner pacman">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+	</div>
+</div>
+<!--loading页结束-->
+	<body>
+		<!--header star-->
+	    <header class="mui-bar mui-bar-nav" id="header">
+			<a class="btn" href="javascript:history.go(-1)">
+	            <i class="iconfont icon-fanhui"></i>
+	        </a>
+	        <div class="top-sch-box top-sch-boxtwo flex-col">
+	            <ul>
+	            	<li style="text-indent: -999px">ss</li>
+	            	<li class="cur"><a href="#">套餐</a></li>
+	            	<!-- <li><a href="#">详情</a></li> -->
+	            	<!-- <li><a href="#">评价</a></li> -->
+	            </ul>
+	        </div>
+	        <a class="btn" href="#">
+	            <i class="iconfont icon-gouwuche"></i>
+	            <span>2</span>
+	        </a>
+	    </header>
+		<!--header end-->
+		
+		<div class="warp warptwo clearfloat">
+			<div class="detail clearfloat">
+				<!--banner star-->
+				<div class="banner swiper-container">
+		            <div class="swiper-wrapper">
+		                <div class="swiper-slide"><a href="javascript:void(0)"><img class="swiper-lazy" data-src="images/pro.png" alt=""></a></div>
+		                <div class="swiper-slide"><a href="javascript:void(0)"><img class="swiper-lazy" data-src="images/pro.png" alt=""></a></div>
+		                <div class="swiper-slide"><a href="javascript:void(0)"><img class="swiper-lazy" data-src="images/pro.png" alt=""></a></div>
+		                <div class="swiper-slide"><a href="javascript:void(0)"><img class="swiper-lazy" data-src="images/pro.png" alt=""></a></div>
+		            </div>
+		            <div class="swiper-pagination"></div>
+		        </div>
+				<!--banner end-->
+				<div class="top clearfloat box-s">
+					<div class="shang clearfloat">
+						<div class="zuo clearfloat fl over2 box-s">
+							进口石榴8个装
+						</div>
+						<div class="you clearfloat fr">
+							<!-- <i class="iconfont icon-fenxiang"></i>
+							<p>分享</p> -->
+							<div id="qrcode" style="width:60px; height:60px;"></div>
+						</div>
+					</div>
+					<div class="xia clearfloat">
+						<p class="jifen fl box-s">&yen; 66.00</p>						
+						<!-- <span class="fr">销量：8</span> -->
+						<p class="jifen box-s">8/个</p>
+					</div>					
+				</div>
+				<!-- <div class="middle clearfloat box-s">
+					<a href="#">
+						<span class="fl">商品详情</span>
+						<i class="iconfont icon-jiantou1 fr"></i>
+					</a>
+				</div>
+				<div class="middle clearfloat box-s">
+					<a href="#">
+						<span class="fl">商品评价</span>
+						<i class="iconfont icon-jiantou1 fr"></i>
+					</a>
+				</div> -->
+				<div class="detailInfo clearfloat box-s">
+					<img src="images/pro.png" alt="" />
+					<img src="images/pro.png" alt="" />
+					<img src="images/pro.png" alt="" />
+					<img src="images/pro.png" alt="" />
+					<img src="images/pro.png" alt="" />
+				</div>
+			</div>
+		</div>
+		
+		<!--footerone star-->
+		<div class="footerone clearfloat">
+			<div class="left clearfloat fl">
+				<ul>
+					<li>
+						<!-- <a href="#">
+							<i class="iconfont icon-kefu1"></i>
+							<p>客服</p>
+						</a> -->
+					</li>
+					<li>
+						<!-- <a href="index.html">
+							<i class="iconfont icon-shangcheng"></i>
+							<p>商城</p>
+						</a> -->
+					</li>								
+				</ul>
+			</div>
+			<div class="right clearfloat fl">
+				<span class="btn fl" onClick="toshare()">加入购物车</span>
+				<!-- <a href="confirm.html" class="btn btnone fl" onClick="toshare()">立即购买</a> -->
+				<a href="javascript:void(0);" class="btn btnone fl" onClick="toshare()">立即购买</a>
+			</div>
+		</div>
+		<!--footerone end-->
+		
+		<!--这里是弹出购物车内容-->
+		<div class="am-share">
+		<div class="am-share-footer"><button class="share_btn"><img src="img/chahao.png" /></button></div>
+		  <div class="am-share-sns box-s">
+		     <div class="sdetail clearfloat">
+		     	<div class="top clearfloat">
+		     		<div class="tu clearfloat fl">
+		     			<span></span>
+		     			<img src="images/pro.png" />
+		     		</div>
+		     		<div class="you clearfloat fl">
+		     			<p class="tit">蒲田云宵枇杷套餐1</p>
+		     			<span>&yen; 66.00</span>
+		     		</div>
+		     	</div>
+<!-- 		     	<div class="middle clearfloat">
+		     		<p>单位：8/个</p>		     				     	
+		     	</div> -->
+		     	<div class="middle clearfloat pgMiddle">
+		     		<ul>
+		     			<li><label><input type="radio" name="payThrough" > 微信支付</label></li>
+		     			<li><label><input type="radio" name="payThrough" > 支付宝支付</label></li>
+		     		</ul>		     				     	
+		     	</div>
+		     	<div class="confirm clearfloat">
+			     	<div class="add clearfloat box-s">
+		    			<a href="choice-address.html" >
+			    			<div class="left clearfloat fl">
+			    				<i class="iconfont icon-dizhi1"></i>
+			    			</div>
+			    			<div class="middle clearfloat fl">
+			    				<p class="tit">
+			    					收货人：王小王&nbsp;&nbsp;&nbsp;&nbsp;15806976589
+			    				</p>
+			    				<p class="fu-tit over2">
+			    					收货地址：安徽省合肥市高新区长江西路拓基城市广场金座A2002
+			    				</p>
+			    			</div>
+			    			<div class="left clearfloat fr">
+			    				<i class="iconfont icon-jiantou1"></i>
+			    			</div>
+		    			</a>
+		    		</div>
+	    		</div>
+		     	<div class="bottom clearfloat">
+		     		<p class="fl">购买数量</p>
+		     		<div class="you clearfloat fr">
+		     			<ul>
+		     				<li class="minus"><img src="img/jian.jpg" /></li>
+		     				<li class="num">1</li>
+		     				<li class="plus"><img src="img/jia.jpg" /></li>
+		     			</ul>
+		     		</div>
+		     	</div>
+		     </div>
+		  </div>
+		  <a href="javascript:void(0);" class="shop-btn db">立即购买</a>
+		</div>
+		
+		<!--footer star-->
+	    <footer class="page-footer fixed-footer" id="footer">
+			<ul>
+				<li>
+					<a href="index.html" >
+						<i class="iconfont icon-shouye"></i>
+						<p>首页</p>
+					</a>
+				</li>
+				<li>
+					<a href="shopcar.html" >
+						<i class="iconfont icon-gouwuche"></i>
+						<p>购物车</p>
+					</a>
+				</li>
+				<li>
+					<a href="center.html" >
+						<i class="iconfont icon-yonghuming"></i>
+						<p>我的</p>
+					</a>
+				</li>
+			</ul>
+		</footer>
+		<!--footer end-->
+	</body>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+	<script type="text/javascript" src="js/qrcode.js"></script>
+	<script type="text/javascript" src="js/mui.min.js" ></script>
+	<script type="text/javascript" src="js/others.js" ></script>
+	<script type="text/javascript" src="js/hmt.js" ></script>
+	<script type="text/javascript" src="slick/slick.js" ></script>
+	<script type="text/javascript" src="js/shopcar.js" ></script>	
+	<!--插件-->
+	<link rel="stylesheet" href="css/swiper.min.css" >
+	<script type="text/javascript" src="js/swiper.jquery.min.js" ></script>
+	<script type="text/javascript" src="js/pages/detail.js" ></script>
+</html>
