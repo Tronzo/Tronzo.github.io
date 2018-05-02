@@ -2,7 +2,7 @@
 <html lang="zh-CN" style="font-size: 29.63px;"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>待付款</title>
+    <title>寄送记录</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <script src="js/rem.js"></script> 
@@ -13,10 +13,14 @@
     <link rel="stylesheet" type="text/css" href="css/mui.min.css">
     <link rel="stylesheet" type="text/css" href="css/loaders.min.css">
     <link rel="stylesheet" type="text/css" href="css/loading.css">
+    <style type="text/css">
+    	.order-top ul li{ width: 50%; }
+    	.order-top ul li a{padding: 5% 0; }
+    </style>
 <script type="text/javascript">
 	$(window).load(function(){
-		$(".loading").addClass("loader-chanage")
-		$(".loading").fadeOut(300)
+		$(".loading").addClass("loader-chanage");
+		$(".loading").fadeOut(300);
 	})
 </script>
 </head>
@@ -36,41 +40,23 @@
 	
 		<header class="mui-bar mui-bar-nav report-header box-s" id="header">
 			<a href="javascript:history.go(-1)"><i class="iconfont icon-fanhui fl"></i></a>
-			<p>待发货</p>
+			<p>待收货</p>
 	    </header>
 	    <div id="main" class="mui-clearfix" style="padding-top: 44px;">
 	    	<div class="order-top clearfloat">
 	    		<ul>
-	    			<li class="clearfloat"><a href="order.html">全部</a></li>
-	    			<li class="clearfloat"><a href="pay-order.html">待付款</a></li>
-	    			<li class="clearfloat cur"><a href="send-order.html">待发货</a></li>
-	    			<li class="clearfloat"><a href="re-order.html">待收货</a></li>
-	    			<!-- <li class="clearfloat"><a href="#">待评价</a></li> -->
+	    			<li class="clearfloat cur"><a href="myPackageSend.html">寄送记录</a></li>
+	    			<li class="clearfloat"><a href="myPackageBuy.html">购买记录</a></li>	    			
 	    		</ul>
 	    	</div>
 	    	<div class="order-list clearfloat">
-	    		<p class="ordernum box-s">
+	    		<div class="ordernum box-s">
 	    			订单  123456789000
-	    			<span>待发货</span>
-	    		</p>
-	    		<div class="shopban">
-    				<img src="images/logo.jpg" alt="" class="logo" />果说说农场
-    			</div>
-	    		<div class="list clearfloat fl box-s">
-	    			<a href="detail.html">
-		    			<div class="tu fl clearfloat">
-		    				<img src="upload/21.jpg">
-		    			</div>
-		    			<div class="middle clearfloat fl">
-		    				<p class="tit">野山茶油5L 纯野山茶籽油</p>
-		    				<p class="fu-tit">月销2000 领券减10元 店长推荐 3月压榨</p>
-		    				<p class="price clearfloat">
-		    					<span class="xprice fl">¥299.00</span>
-		    					<span class="yprice fl">¥308</span>
-		    					<span class="shu">×1</span>
-		    				</p>
-		    			</div>
-	    			</a>
+	    			<span>套餐名称：套餐一</span>
+	    			<p>源产地：江西赣州<br>    				
+	    				寄送次数：1<br>
+	    				购买时间：2018-05-12
+	    			</p>
 	    		</div>
 	    		<div class="list clearfloat fl box-s">
 	    			<a href="detail.html">
@@ -88,9 +74,23 @@
 		    			</div>
 	    			</a>
 	    		</div>
+	    		<div class="list clearfloat fl box-s">
+	    			<a href="detail.html">
+		    			<div class="tu fl clearfloat">
+		    				<img src="upload/21.jpg">
+		    			</div>
+		    			<div class="middle clearfloat fl">
+		    				<p class="tit">野山茶油5L 纯野山茶籽油</p>
+		    				<p class="fu-tit">月销2000 领券减10元 店长推荐 3月压榨</p>
+		    				<p class="price clearfloat">
+		    					<span class="xprice fl">¥299.00</span>
+		    					<span class="yprice fl">¥308</span>
+		    					<span class="shu">×1</span>
+		    				</p>
+		    			</div>
+	    			</a>
+	    		</div>    		
 	    	</div>
-
-	    	<a href="#" class="more-btn db ra5">更多</a>
 	    </div>
 	
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
