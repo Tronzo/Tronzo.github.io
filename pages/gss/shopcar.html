@@ -15,6 +15,16 @@
     <link rel="stylesheet" type="text/css" href="css/loaders.min.css" />
     <link rel="stylesheet" type="text/css" href="css/loading.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <style type="text/css">
+    	.allcheck{ display: inline-block; }
+     	.allcheck input{ vertical-align: middle; }
+     	.radio.allcheck .option{ width: .85rem; height: .85rem; top: .2rem; }
+    	.settlement .zuo{ width: 100%; overflow: hidden; }
+    	.settlement .zuo .total{ white-space: nowrap; color: #FF0099; }
+    	.settlement .zuo span{ display: inline-block; line-height: .7rem; color: #FF0099; }
+    	.settlement .zuo span p{color: #FF0099;}
+    	.settlement .zuo span .num{ font-style: normal; }
+    </style>
 <script type="text/javascript">
 	$(window).load(function(){
 		$(".loading").addClass("loader-chanage");
@@ -42,7 +52,7 @@
 	            <i class="iconfont icon-fanhui"></i>
 	        </a>
 	        <div class="top-sch-box top-sch-boxtwo flex-col">
-	                      购物车
+	            购物车
 	        </div>
 	        <a class="btn" href="#">
 	            <i class="iconfont icon-lajixiang"></i>
@@ -56,139 +66,132 @@
 	    			<div class="shopban">
 	    				<img src="images/logo.jpg" alt="" class="logo" />果说说农场
 	    			</div>
-	    			<div class="xuan clearfloat fl">
-	    				<div class="radio" > 
-						    <label>
-						        <input type="checkbox" name="sex" value="" />
-						        <div class="option"></div>
-						    </label>
-						</div>
+	    			<div class="procart">		    			
+	    				<div class="procart-a">
+	    					<div class="xuan clearfloat fl">
+			    				<div class="radio" > 
+								    <label>
+								        <input type="checkbox" name="checkod" value="" />
+								        <div class="option"></div>
+								    </label>
+								</div>
+			    			</div>
+			    			<a href="javascript:void(0)" class="clearfloat" >
+				    			<div class="tu clearfloat fl">
+				    				<span></span>
+				    				<img src="images/pro.png" />
+				    			</div>
+				    			<div class="right clearfloat fl">
+				    				<p class="tit over">蒲田云宵枇杷10斤装</p>
+				    				<p class="fu-tit over">10/kg</p>				    				
+				    				<div class="bottom clearfloat">
+				    					<div class="zuo you clearfloat fr">
+				    						<ul>
+				    							<li class="minus"><img src="img/jian.jpg" /></li>
+							     				<li class="num">2</li>
+							     				<li class="plus"><img src="img/jia.jpg" /></li>
+				    						</ul>
+				    					</div>
+				    					<span class="jifen over">&yen; 80.00</span>
+				    					<!-- <i class="iconfont icon-lajixiang fr"></i> -->
+				    				</div>
+				    			</div>
+			    			</a>
+			    		</div>
+			    		<div class="procart-a">
+			    			<div class="xuan clearfloat fl">
+			    				<div class="radio" > 
+								    <label>
+								        <input type="checkbox" name="checkod" value="" />
+								        <div class="option"></div>
+								    </label>
+								</div>
+			    			</div>
+			    			<a href="javascript:void(0)" class="clearfloat" >
+				    			<div class="tu clearfloat fl">
+				    				<span></span>
+				    				<img src="images/pro.png" />
+				    			</div>
+				    			<div class="right clearfloat fl">
+				    				<p class="tit over">蒲田云宵枇杷10斤装</p>
+				    				<p class="fu-tit over">10/kg</p>
+				    				<div class="bottom clearfloat">
+				    					<div class="zuo you clearfloat fr">
+				    						<ul>
+				    							<li class="minus"><img src="img/jian.jpg" /></li>
+							     				<li class="num">2</li>
+							     				<li class="plus"><img src="img/jia.jpg" /></li>
+				    						</ul>
+				    					</div>
+				    					<span class="jifen over">&yen; 80.00</span>
+				    					<!-- <i class="iconfont icon-lajixiang fr"></i> -->
+				    				</div>
+				    			</div>
+			    			</a>
+		    			</div>
 	    			</div>
-	    			<a href="javascript:void(0)">
-		    			<div class="tu clearfloat fl">
-		    				<span></span>
-		    				<img src="images/pro.png" />
-		    			</div>
-		    			<div class="right clearfloat fl">
-		    				<p class="tit over">蒲田云宵枇杷10斤装</p>
-		    				<p class="fu-tit over">10/kg</p>
-		    				<p class="jifen over">&yen; 80.00</p>
-		    				<div class="bottom clearfloat">
-		    					<div class="zuo you clearfloat fl">
-		    						<ul>
-		    							<li class="minus"><img src="img/jian.jpg" /></li>
-					     				<li class="num">2</li>
-					     				<li class="plus"><img src="img/jia.jpg" /></li>
-		    						</ul>
-		    					</div>
-		    					<i class="iconfont icon-lajixiang fr"></i>
-		    				</div>
-		    			</div>
-	    			</a>
 	    		</div>
 	    		<div class="list clearfloat fl">
-	    			<div class="xuan clearfloat fl">
-	    				<div class="radio" > 
-						    <label>
-						        <input type="checkbox" name="sex" value="" />
-						        <div class="option"></div>
-						    </label>
-						</div>
+	    			<div class="shopban">
+	    				<img src="images/logo.jpg" alt="" class="logo" />果说说农场
 	    			</div>
-	    			<a href="javascript:void(0)">
-		    			<div class="tu clearfloat fl">
-		    				<span></span>
-		    				<img src="images/pro.png" />
+	    			<div class="procart">		    			
+	    				<div class="procart-a">
+	    					<div class="xuan clearfloat fl">
+			    				<div class="radio" > 
+								    <label>
+								        <input type="checkbox" name="checkod" value="" />
+								        <div class="option"></div>
+								    </label>
+								</div>
+			    			</div>
+			    			<a href="javascript:void(0)" >
+				    			<div class="tu clearfloat fl">
+				    				<span></span>
+				    				<img src="images/pro.png" />
+				    			</div>
+				    			<div class="right clearfloat fl">
+				    				<p class="tit over">蒲田云宵枇杷10斤装</p>
+				    				<p class="fu-tit over">10/kg</p>
+				    				<div class="bottom clearfloat">
+				    					<div class="zuo you clearfloat fr">
+				    						<ul>
+				    							<li class="minus"><img src="img/jian.jpg" /></li>
+							     				<li class="num">2</li>
+							     				<li class="plus"><img src="img/jia.jpg" /></li>
+				    						</ul>
+				    					</div>
+				    					<span class="jifen over">&yen; 80.00</span>
+				    					<!-- <i class="iconfont icon-lajixiang fr"></i> -->
+				    				</div>
+				    			</div>
+			    			</a>
 		    			</div>
-		    			<div class="right clearfloat fl">
-		    				<p class="tit over">蒲田云宵枇杷10斤装</p>
-		    				<p class="fu-tit over">10/kg</p>
-		    				<p class="jifen over">&yen; 80.00</p>
-		    				<div class="bottom clearfloat">
-		    					<div class="zuo you clearfloat fl">
-		    						<ul>
-		    							<li class="minus"><img src="img/jian.jpg" /></li>
-					     				<li class="num">1</li>
-					     				<li class="plus"><img src="img/jia.jpg" /></li>
-		    						</ul>
-		    					</div>
-		    					<i class="iconfont icon-lajixiang fr"></i>
-		    				</div>
-		    			</div>
-	    			</a>
-	    		</div>
-	    		<div class="list clearfloat fl">
-	    			<div class="xuan clearfloat fl">
-	    				<div class="radio" > 
-						    <label>
-						        <input type="checkbox" name="sex" value="" />
-						        <div class="option"></div>
-						    </label>
-						</div>
 	    			</div>
-	    			<a href="javascript:void(0)">
-		    			<div class="tu clearfloat fl">
-		    				<span></span>
-		    				<img src="images/pro.png" />
-		    			</div>
-		    			<div class="right clearfloat fl">
-		    				<p class="tit over">蒲田云宵枇杷10斤装</p>
-		    				<p class="fu-tit over">10/kg</p>
-		    				<p class="jifen over">&yen; 80.00</p>
-		    				<div class="bottom clearfloat">
-		    					<div class="zuo you clearfloat fl">
-		    						<ul>
-		    							<li class="minus"><img src="img/jian.jpg" /></li>
-					     				<li class="num">1</li>
-					     				<li class="plus"><img src="img/jia.jpg" /></li>
-		    						</ul>
-		    					</div>
-		    					<i class="iconfont icon-lajixiang fr"></i>
-		    				</div>
-		    			</div>
-	    			</a>
-	    		</div>
-	    		<div class="list clearfloat fl">
-	    			<div class="xuan clearfloat fl">
-	    				<div class="radio" > 
-						    <label>
-						        <input type="checkbox" name="sex" value="" />
-						        <div class="option"></div>
-						    </label>
-						</div>
-	    			</div>
-	    			<a href="javascript:void(0)">
-		    			<div class="tu clearfloat fl">
-		    				<span></span>
-		    				<img src="images/pro.png" />
-		    			</div>
-		    			<div class="right clearfloat fl">
-		    				<p class="tit over">蒲田云宵枇杷10斤装</p>
-		    				<p class="fu-tit over">10/kg</p>
-		    				<p class="jifen over">&yen; 80.00</p>
-		    				<div class="bottom clearfloat">
-		    					<div class="zuo you clearfloat fl">
-		    						<ul>
-		    							<li class="minus"><img src="img/jian.jpg" /></li>
-					     				<li class="num">123</li>
-					     				<li class="plus"><img src="img/jia.jpg" /></li>
-		    						</ul>
-		    					</div>
-		    					<i class="iconfont icon-lajixiang fr"></i>
-		    				</div>
-		    			</div>
-	    			</a>
 	    		</div>
 	    	</div>
 	    </div>
 	    
 	    <!--settlement star-->
 	    <div class="settlement clearfloat">
-	    	<div class="zuo clearfloat fl box-s">
-	    		合计：<span>￥1420</span>
+	    	<div class="zuo clearfloat box-s">
+	    		<div class="fr total">
+    				<em style="color: #999;font-style: normal;">不含运费</em> 合计：
+    				<span>
+    					<p>共<i class="num">6</i>件商品</p>
+    					<p>&yen;1420.00</p>
+    				</span>
+	    		</div>
+	    		<div class="radio allcheck"> 
+				    <label>
+				        <input type="checkbox" name="allcheck" id="allcheck" >
+				        <div class="option"></div>
+				        全选
+				    </label>
+				</div>
 	    	</div>
-	    	<a href="confirm.html" class="fl db">
-	    		立即结算
+	    	<a href="confirm.html" class="db">
+	    		立即购买
 	    	</a>
 	    </div>
 	    <!--settlement end-->
@@ -226,4 +229,5 @@
 	<!--插件-->
 	<link rel="stylesheet" href="css/swiper.min.css" >
 	<script type="text/javascript" src="js/swiper.jquery.min.js" ></script>
+	<script type="text/javascript" src="js/pages/shopcar.js" ></script>
 </html>

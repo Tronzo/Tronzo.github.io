@@ -2,18 +2,18 @@
 <html lang="zh-CN" style="font-size: 29.63px;"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>待付款</title>
+    <title>订单详情</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <script src="js/rem.js"></script> 
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="css/common/base.css">
+    <link rel="stylesheet" type="text/css" href="css/pages/orderDetail.css">
     <link rel="stylesheet" type="text/css" href="css/page.css">
     <link rel="stylesheet" type="text/css" href="css/all.css">
     <link rel="stylesheet" type="text/css" href="css/mui.min.css">
     <link rel="stylesheet" type="text/css" href="css/loaders.min.css">
     <link rel="stylesheet" type="text/css" href="css/loading.css">
-    <link rel="stylesheet" type="text/css" href="css/pages/order.css">
 <script type="text/javascript">
 	$(window).load(function(){
 		$(".loading").addClass("loader-chanage")
@@ -37,19 +37,16 @@
 	
 		<header class="mui-bar mui-bar-nav report-header box-s" id="header">
 			<a href="javascript:history.go(-1)"><i class="iconfont icon-fanhui fl"></i></a>
-			<p>待付款</p>
+			<p>我的订单</p>
 	    </header>
-	    <div id="main" class="mui-clearfix" style="padding-top: 44px;">
-	    	<div class="order-top clearfloat">
-	    		<ul>
-	    			<li class="clearfloat"><a href="order.html">全部</a></li>
-	    			<li class="clearfloat cur"><a href="pay-order.html">待付款</a></li>
-	    			<li class="clearfloat"><a href="buyedOrder.html">已购买</a></li>
-	    			<!-- <li class="clearfloat"><a href="send-order.html">待发货</a></li>
-	    			<li class="clearfloat"><a href="re-order.html">待收货</a></li> -->
-	    			<!-- <li class="clearfloat"><a href="#">待评价</a></li> -->
-	    		</ul>
-	    	</div>
+	    <div id="main" class="mui-clearfix sorder" style="padding-top: 44px;">
+	    	<div class="warning clearfloat box-s">
+    			提示：请在24小时内完成在线支付，逾期将视为订单无效
+    		</div>
+    		<div class="addr">
+    			<p class="contact"><span class="phone">1390000000</span><em>张三</em></p>
+    			<p>广东省深圳市南山区南头街道现代豪方9栋1205室</p>
+    		</div>
 	    	<div class="order-list clearfloat">
 	    		<p class="ordernum box-s">
 	    			订单  123456789000
@@ -90,11 +87,8 @@
 		    			</div>
 	    			</a>
 	    		</div>
-	    		<a href="submit-order.html" class="gopay-btn fr">
-	    			确认付款
-	    		</a>
-	    		<a href="javascript:void(0);" class="gopay-btn cancel-btn fr">
-	    			取消订单
+	    		<a href="#" class="gopay-btn fr">
+	    			立即支付
 	    		</a>
 	    	</div>
 

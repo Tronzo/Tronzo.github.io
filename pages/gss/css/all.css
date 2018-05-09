@@ -446,7 +446,9 @@
 
 .top-sch-boxtwo ul li{width: 33.333%; float: left; text-align: center;}
 .top-sch-boxtwo ul li a{color: #999999; font-size: .45rem; display: inline-block; height: 1.2rem;}
-.top-sch-boxtwo ul li.cur a{color: #00cc7d; 
+.top-sch-boxtwo ul li.cur a{
+	color: #333; 
+	/*color: #00cc7d;*/ 
 	/*border-bottom: 3px solid #00cc7d; */
 	padding: 0 .2rem;}
 
