@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	/*background-color: #012192;*/
+	/*background-color: rgb(15,4,20);*/
+    background-color: #000;
+	/*background-image: url(../imgs/bg.jpg);*/
+	/*background-image: url(../imgs/szlt-bottom.png);*/
+	background-image: url(../imgs/beijing-1.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	padding-bottom:150px;
+	background-size:100%;
+	margin:0;
+    list-style: none;
+}
+p{ font-size:15px; font-family:"微软雅黑"; line-height:30px; padding:0; margin:0; color:#fff;}
+/*.text{ color:#FF0; padding-left:25px;}*/
+.text{ color:#FF0; padding-left:25px;}
+.text1{ padding-left:30px;}
+.text2{
+	font-family: "微软雅黑";
+	text-align: left;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 35px;
+	/*background-color: #62A9EA;*/
+    background: rgb(135,94,24);
+	padding-left: 8px;
+	border-radius: 8px;
+	margin: 10px 0;
+}
+h1{
+	border-radius: 8px;
+	font-size: 20px;
+	font-family: "微软雅黑";
+	line-height: 45px;
+	color: #FFF;
+	text-align: center;
+	/*background-color: #2688E1;*/
+    background: rgb(224,161,29);
+}
+
+table{ width:100%; color:#FFF;font-family: "微软雅黑";font-size: 15px; line-height:35px;
+    /*margin-bottom: 100px;*/
+}
+table tr td{padding-left: 8px; border-bottom:#CDCDCD dotted 1px;}
+table tr th{ border-bottom:#CDCDCD dotted 1px; }
+table tr.noneborder td{ border: none; }
+.table{ border:#FFF solid 1px; border-radius:8px; margin-top:15px; padding:0 15px 0 15px;}
+.importwidth.columna{ float:left; width: 62%;border: none; padding:0 15px 5px 15px; box-sizing: content-box; }
+.columna{ width:100%; border:#fff 1px solid; border-radius:8px;}
+.columnb{ width:30%; float:right; border:#fff 1px solid; border-radius:8px; padding:0 15px 5px 15px;}
+.columnc{ width:32%; float:left;}
+.columnd{ width:48%; float:left;}
+.columne{ width:48%; float:right;}
+.columna table{ line-height: 24px; }
+.columna table th,.columna table td{ width: 33.3%; padding: 8px 0; text-align: center; }
+.columna table .time{ width: 26%; color: #FF0; }
+.columna table .agenda{ width: 30%; padding: 8px 10px; text-align: left; }
+.columna table .guests{ width: 44%; padding: 8px 10px; }
+.columna table tr.tip{ background: rgb(135,94,24); font-weight: bold; }
+.columna table tr.tip td{ padding-left: 10px; text-align: left; }
+.columna table tr.tip2 td{ padding-left: 10px; text-align: left; }
+
+/*.top{ background:url(../imgs/bg_top.jpg) no-repeat top center; margin:0;text-align:center; width:100%;}*/
+
+/*.top img{ width:100%; max-width:1050px; height:auto;margin: 0 auto}*/
+.top img{display: block; height:auto;margin: 0 auto}
+.body{ width:99%;	max-width: 1000px;	margin: 0 auto;}
+.clear{ clear:both;}
+.blank{ clear:both; height:40px;}
+
+@media screen and (max-width:800px){
+	body{
+	background-color: #000;
+	background-image: url(../imgs/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	padding-bottom:40px;
+	background-size:150%;
+	margin:0;
+}
+	.top{ background:url(../imgs/bg_top.jpg) no-repeat bottom center; margin:0;text-align:center; width:100%;}
+	.importwidth.columna{ float:none; clear:both; width:90%; margin: auto; }
+	/*.columnb{ display:none;}*/
+	.columnb{ margin-top: 20px; float: none; width: 90%; margin: auto; }
+	.columnd{ float:none; clear:both; width:98%;}
+	.columne{ float:none; clear:both; width:98%;}
+	.columna table{ font-size: 12px; }
+	}
+
+/*高峰论坛*/
+.gflt-wrap{
+   /* min-width: 960px;*/
+    color: #fff;
+     overflow: hidden;
+    font-family: '微软雅黑';
+    /*border: 1px solid red;*/
+}
+.gflt-wrap .common-ul{
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 470px;
+    /*border: 1px solid #fff;*/
+}
+
+.gflt-wrap .common-ul .li-item{
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px dotted #ccc;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    overflow: hidden;
+}
+.gflt-wrap .common-ul .li-item div{
+    float: left;
+    text-align: center;
+}
+.gflt-wrap .common-ul .li-item .company-t{
+    width: 150px;
+}
+.gflt-wrap .common-ul .li-item .job-t{
+    width: 250px;
+}
+.gflt-wrap .common-ul .li-item .name-t{
+    width: 70px;
+}
+.gflt-wrap .ul2{
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
