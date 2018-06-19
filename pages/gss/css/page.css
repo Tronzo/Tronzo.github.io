@@ -95,7 +95,10 @@
  * */
 .shopcar{width: 100%;}
 .shopcar .list{width: 100%; height: auto; background-color: #fff; margin-bottom: 3%; padding: .5rem .2rem;}
-.shopcar .list .xuan{width: .8rem; height: .8rem; margin-top: 1.1rem;}
+.shopcar .list .xuan{position: absolute; left: 0; width: .8rem; height: .8rem; margin-top: 1.1rem;}
+.procart{ position: relative; }
+.procart .procart-a{ padding-left: 0.6rem; }
+.procart .procart-a a:after{ content: " "; display: block; width: 100%; height: 10px; }
 label {width: 100%; display: block;  position: relative; font-weight: normal;}
 .radio .option {width: .8rem; height: .8rem; position: absolute; top: 0; left: 0px; background-size: cover;  background: url(../img/check1.png)/*tpa=http://yanshi.sucaihuo.com/modals/15/1588/demo/img/check1.png*/ no-repeat; background-size: cover;}
 .radio input[type="checkbox"] {display: inline-block ; margin-right: 15px ; opacity: 0 ;}
@@ -109,20 +112,20 @@ label {width: 100%; display: block;  position: relative; font-weight: normal;}
 .shopcar .list .tu{width: 3rem; height: 3rem; font-size: 0; border: 1px solid #e2e2e2; text-align: center; margin-left: .4rem;overflow: hidden;}
 .shopcar .list .tu span{display: inline-block; height: 100%; line-height: 0; vertical-align: middle;}
 .shopcar .list .tu img{max-width: 100%;}
-.shopcar .list .right{height: 3rem; width: 57%; margin-left: 2%;}
+.shopcar .list .right{height: 3rem; width: 60%; margin-left: 2%;}
 .shopcar .list .right .tit{color: #333333; font-size: .5rem; line-height: .8rem;}
 .shopcar .list .right .fu-tit{color: #999999; font-size: .35rem;}
-.shopcar .list .right .jifen{font-size: .5rem; color: #fc8f00; margin-top: .2rem;}
+.shopcar .list .right .jifen{font-size: .5rem; color: #FF0099; margin-top: .2rem;}
 .shopcar .list .right .bottom{width: 100%; margin-top: .2rem;}
 .shopcar .list .right .bottom .zuo ul li{float: left; color: #333; font-size: .5rem; width: .8rem; height: .8rem; text-align: center; line-height: .8rem;}
 .shopcar .list .right .bottom .zuo ul li.num{ min-width: .8rem; width: auto; }
 .shopcar .list .right .bottom .zuo ul li img{width: 100%;}
 .shopcar .list .right .bottom i{line-height: .8rem; color: #fa4747; font-size: .7rem;}
 
-.settlement{width: 100%; height: 1.8rem; position: fixed; bottom: 1.6rem; border-top: 1px solid #f4f4f4; background-color: #fff;}
-.settlement .zuo{width: 60%; height: 1.8rem; line-height: 1.8rem; padding: 0 .5rem; font-size: .5rem; color: #666666;}
-.settlement .zuo span{color: #ff4141;}
-.settlement a{width: 40%; height: 1.8rem; line-height: 1.8rem; background-color: #FA478F; font-size: .5rem; color: #fff; text-align: center;}
+.settlement{width: 100%; height: 3rem; position: fixed; bottom: 1.6rem; border-top: 1px solid #f4f4f4; background-color: #fff;}
+.settlement .zuo{width: 60%; height: 1.4rem; line-height: 1.4rem; padding: 0 .2rem; font-size: .5rem; color: #666666;}
+.settlement .zuo span{color: #FF0099;}
+.settlement a{display:block;width: 96%; height: 1.2rem; margin: .2rem auto; line-height: 1.2rem; background-color: #FA478F; font-size: .5rem; color: #fff; text-align: center;}
 
 /*
  lists--------------------------------------------------------------------------------------
@@ -144,7 +147,7 @@ label {width: 100%; display: block;  position: relative; font-weight: normal;}
 .lists .bottom .lie .right .xia,
 .confirm .lie .right .xia{height: .8rem; line-height: .8rem; width: 100%;}
 .lists .bottom .lie .right .jifen,
-.confirm .lie .right .jifen{width: 80%; color: #fc8f00; font-size: .45rem;}
+.confirm .lie .right .jifen{width: 80%; color: #FF0099; font-size: .45rem;}
 .lists .bottom .lie .right span{width: .8rem; height: .8rem;}
 .lists .bottom .lie .right span img{width: 100%;}
 
@@ -160,7 +163,8 @@ label {width: 100%; display: block;  position: relative; font-weight: normal;}
 .detail .top .xia{width: 100%; margin-top: .1rem;
  /*height: 1rem; */
  line-height: 1rem;}
-.detail .top .xia .jifen{width: 79%; padding: 0 2%; color: #ff9100; font-size: .4rem;}
+.detail .top .xia .jifen{width: 79%; padding: 0 2%; color: #ff0099; font-size: .6rem;}
+.detail .top .xia .jifen.unit{ color: #333; font-size: .4rem; }
 .detail .top .xia .jifen samp{font-size: .5rem;}
 .detail .top .xia span{color: #999999; font-size: .4rem; display: block; width: 20%; text-align: center;}
 
@@ -168,15 +172,15 @@ label {width: 100%; display: block;  position: relative; font-weight: normal;}
 .detail .middle a{color: #333333; font-size: .5rem; display: block; width: 100%; height: 100%;}
 .detail .middle i{color: #c1c2c4;}
 
-.footerone{width: 100%; border-top: 1px solid #e6e6e6; height: 1.8rem; background-color: #fff; position: fixed; bottom: 1.6rem; left: 0;}
+.footerone{width: 100%; border-top: 1px solid #e6e6e6; height: 1.2rem; background-color: #fff; position: fixed; bottom: 1.6rem; left: 0;}
 .footerone .left{width: 30%;}
-.footerone .left ul li{width: 50%; height: 1.8rem;
+.footerone .left ul li{width: 50%; height: 1.2rem;
  /*border-right: 1px solid #e6e6e6;*/
  padding-top: .4rem; float: left; text-align: center;}
 .footerone .left ul li p{font-size: .35rem; color: #333333;}
 .footerone .left ul li i{color: #666666;}
 .footerone .right{width: 70%;}
-.footerone .right .btn{display: block; width: 50%; height: 1.8rem; text-align: center; line-height: 1.8rem; background-color: #00cc7d; color: #fff; font-size: .5rem;}
+.footerone .right .btn{display: block; width: 50%; height: 1.2rem; text-align: center; line-height: 1.2rem; background-color: #FA478F; color: #fff; font-size: .5rem; border-right: 1px solid #fd62a0}
 .footerone .right .btnone{background-color: #FA478F;}
 
 /*购物车弹出层*/
@@ -244,7 +248,7 @@ input[type="radio"]:checked+div {background: url(../img/check2.png)/*tpa=http://
 
 .confirm .gmshuthree .you{width: 80%; margin-top: 0;}
 .confirm .gmshuthree .you .text{height: 1.4rem; line-height: 1.4rem; color: #333; margin: 0; padding: 0; text-indent: .5rem; border: none; font-size: .5rem;}
-.confirm .gmshu samp{color: #fc8f00; font-size: .57rem; font-family: "微软雅黑";}
+.confirm .gmshu samp{color: #FF0099; font-size: .57rem; font-family: "微软雅黑";}
 
 .confirm .integral{width: 100%; background-color: #fff; margin-top: 3%; padding: 0 .2rem; height: 1.5rem; line-height: 1.5rem;}
 .confirm .integral .zuo{font-size: .5rem;}
@@ -363,8 +367,8 @@ input[type="checkbox"]:checked+div {background: url(../img/queren.png)/*tpa=http
  全部订单----------------------------------------------------------------------------------
  * */
 .order-top{width: 100%; background-color: #FA478F;}
-.order-top ul li{float: left; width: 20%; text-align: center;}
-.order-top ul li a{padding: 20% 0; font-size: .5rem; display: inline-block; color: #fff;}
+.order-top ul li{float: left; width: 33.3%; text-align: center;}
+.order-top ul li a{padding: 8% 0; font-size: .5rem; display: inline-block; color: #fff;}
 .order-top ul li.cur a{border-bottom: 3px solid #ffb8df; color: #fff;}
 .order-list{width: 100%; background-color: #fff; margin-top: 5%; border-top: 1px solid #dcdad3; border-bottom: 1px solid #dcdad3;}
 .order-list .ordernum{width: 100%; padding:3% 5%; font-size: .5rem; color: #444444; border-bottom: 1px solid #dcdad3;}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>套餐详情页</title>
+    <title>套餐详情</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <script src="js/rem.js" ></script> 
@@ -26,7 +26,12 @@
 	.detailInfo img{max-width: 100%;}
 	.sdetail .middle{ padding: 10px 0; }
 	.pgMiddle{ margin-top: 5px; border-top: 1px solid #e7e7e7; }
+	.detail .middle.certified{ height: auto; padding: 5px 5%;}
+	.certified h1{ color: #ff99ff; font-size: 18px; font-weight: 400; }
+	.certified p{ margin: 0; line-height: 20px; }
+	.certified p em{ margin-right: 10px; font-size: 10px; color: #00cc66; font-style: normal; }
 </style>
+
 </head>
 <!--loading页开始-->
 <div class="loading">
@@ -50,14 +55,14 @@
 	        <div class="top-sch-box top-sch-boxtwo flex-col">
 	            <ul>
 	            	<li style="text-indent: -999px">ss</li>
-	            	<li class="cur"><a href="#">套餐</a></li>
+	            	<li class="cur"><a href="#">套餐详情</a></li>
 	            	<!-- <li><a href="#">详情</a></li> -->
 	            	<!-- <li><a href="#">评价</a></li> -->
 	            </ul>
 	        </div>
-	        <a class="btn" href="#">
-	            <i class="iconfont icon-gouwuche"></i>
-	            <span>2</span>
+	        <a class="btn" href="#" style="width: 18px;">
+	            <!-- <i class="iconfont icon-gouwuche"></i>
+	            <span>2</span> -->
 	        </a>
 	    </header>
 		<!--header end-->
@@ -89,8 +94,15 @@
 					<div class="xia clearfloat">
 						<p class="jifen fl box-s">&yen; 66.00</p>						
 						<!-- <span class="fr">销量：8</span> -->
-						<p class="jifen box-s">8/个</p>
+						<p class="jifen box-s unit">8/个</p>
 					</div>					
+				</div>
+				<div class="certified middle clearfloat box-s">
+					<img src="images/logo.jpg" style="display:inline-block;max-width: 42px;vertical-align: middle;">
+					<div style="display:inline-block;vertical-align: middle;">
+						<h1>果说说农场</h1>
+						<p><em>企业认证</em><em>质量认证</em><em>信用认证</em></p>
+					</div>
 				</div>
 				<!-- <div class="middle clearfloat box-s">
 					<a href="#">
