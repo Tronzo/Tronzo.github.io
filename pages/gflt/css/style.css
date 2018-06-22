@@ -3,10 +3,10 @@
 body{
 	/*background-color: #012192;*/
 	/*background-color: rgb(15,4,20);*/
-    background-color: #000;
+    background-color: #fff;
 	/*background-image: url(../imgs/bg.jpg);*/
 	/*background-image: url(../imgs/szlt-bottom.png);*/
-	background-image: url(../imgs/beijing-1.png);
+	background-image: url(../imgs/foot.jpg);
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	padding-bottom:150px;
@@ -70,7 +70,7 @@ table tr.noneborder td{ border: none; }
 
 @media screen and (max-width:800px){
 	body{
-	background-color: #000;
+	background-color: #fff;
 	background-image: url(../imgs/bg.jpg);
 	background-repeat: no-repeat;
 	background-position: bottom center;
