@@ -52,7 +52,7 @@ table tr.noneborder td{ border: none; }
 .table{ border:#333 solid 1px; border-radius:8px; margin-top:15px; padding:0 15px 0 15px;}
 .importwidth.columna{ float:left; width: 62%;border: none; padding:0 15px 5px 15px; box-sizing: content-box; }
 .columna{ width:100%; border:#333 1px solid; border-radius:8px;}
-.columnb{ width:30%; float:right; border:#333 1px solid; border-radius:8px; padding:0 15px 5px 15px;}
+.columnb{ width:30%; float:right; border-radius:8px; padding:0 15px 5px 15px;}
 .columnc{ width:32%; float:left;}
 .columnd{ width:48%; float:left;}
 .columne{ width:48%; float:right;}
