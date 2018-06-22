@@ -80,6 +80,7 @@ table tr.noneborder td{ border: none; }
 	background-size:150%;
 	margin:0;
 }
+h1{ font-size: 14px; }
 	.top{ background:url(../imgs/bg_top.jpg) no-repeat bottom center; margin:0;text-align:center; width:100%;}
 	.importwidth.columna{ float:none; clear:both; width:90%; margin: auto; }
 	/*.columnb{ display:none;}*/
